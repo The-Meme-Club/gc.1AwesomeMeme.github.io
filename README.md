@@ -1,90 +1,95 @@
-<p align="center">
-  <a href="http://materializecss.com/">
-    <img src="http://materializecss.com/res/materialize.svg" width="150">
-  </a>
+# [Bulma](https://bulma.io)
 
-  <h3 align="center">MaterializeCSS</h3>
+Bulma is a **modern CSS framework** based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
 
-  <p align="center">
-    Materialize, a CSS Framework based on material design.
-    <br>
-    <a href="http://materializecss.com/"><strong>-- Browse the docs --</strong></a>
-    <br>
-    <br>
-    <a href="https://travis-ci.org/Dogfalo/materialize">
-      <img src="https://travis-ci.org/Dogfalo/materialize.svg?branch=master" alt="Travis CI badge">
-    </a>
-    <a href="https://badge.fury.io/js/materialize-css">
-      <img src="https://badge.fury.io/js/materialize-css.svg" alt="npm version badge">
-    </a>
-    <a href="https://cdnjs.com/libraries/materialize">
-      <img src="https://img.shields.io/cdnjs/v/materialize.svg" alt="CDNJS version badge">
-    </a>
-    <a href="https://david-dm.org/Dogfalo/materialize">
-      <img src="https://david-dm.org/Dogfalo/materialize/status.svg" alt="dependencies Status badge">
-      </a>
-    <a href="https://david-dm.org/Dogfalo/materialize#info=devDependencies">
-      <img src="https://david-dm.org/Dogfalo/materialize/dev-status.svg" alt="devDependency Status badge">
-    </a>
-    <a href="https://gitter.im/Dogfalo/materialize">
-      <img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter badge">
-    </a>
-</p>
+[![npm](https://img.shields.io/npm/v/bulma.svg)](https://www.npmjs.com/package/bulma)
+[![npm](https://img.shields.io/npm/dm/bulma.svg)](https://www.npmjs.com/package/bulma)
+[![Join the chat at https://gitter.im/jgthms/bulma](https://badges.gitter.im/jgthms/bulma.svg)](https://gitter.im/jgthms/bulma)
+[![Build Status](https://travis-ci.org/jgthms/bulma.svg?branch=master)](https://travis-ci.org/jgthms/bulma)
 
-## Table of Contents
-- [Quickstart](#quickstart)
-- [Documentation](#documentation)
-- [Supported Browsers](#supported-browsers)
-- [Changelog](#changelog)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [Copyright and license](#copyright-and-license)
+<a href="https://bulma.io"><img src="https://raw.githubusercontent.com/jgthms/bulma/master/docs/images/bulma-banner.png" alt="Bulma: a Flexbox CSS framework" style="max-width:100%;" width="600" height="315"></a>
 
-## Quickstart:
-Read the [getting started guide](http://materializecss.com/getting-started.html) for more information on how to use materialize.
+## Quick install
 
-- [Download the latest release](https://github.com/Dogfalo/materialize/releases/latest) of materialize directly from GitHub.
-- Clone the repo: `git clone https://github.com/Dogfalo/materialize.git`
-- Include the files via [cdnjs](https://cdnjs.com/libraries/materialize). More [here](http://materializecss.com/getting-started.html).
-- Install with [npm](https://www.npmjs.com): `npm install materialize-css`
-- Install with [Bower](https://bower.io): `bower install materialize`
-- Install with [Atmosphere](https://atmospherejs.com): `meteor add materialize:materialize`
+Bulma is constantly in development! Try it out now:
 
-## Documentation
-The documentation can be found at <http://materializecss.com>. To run the documentation locally on your machine, you need [Node.js](https://nodejs.org/en/) installed on your computer.
+### NPM
 
-### Running documentation locally
-Run these commands to set up the documentation:
+```sh
+npm install bulma
+```
+**or**
 
-```bash
-git clone https://github.com/Dogfalo/materialize
-cd materialize
-npm install
+### Yarn
+
+```sh
+yarn add bulma
 ```
 
-Then run `grunt monitor` to compile the documentation. When it finishes, open a new browser window and navigate to `localhost:8000`. We use [BrowserSync](https://www.browsersync.io/) to display the documentation.
+### Bower
 
-### Documentation for previous releases
-Previous releases and their documentation are available for [download](https://github.com/Dogfalo/materialize/releases).
+```sh
+bower install bulma
+```
 
-## Supported Browsers:
-Materialize is compatible with:
+### CDN
 
-- Chrome 35+
-- Firefox 31+
-- Safari 7+
-- Opera
-- Edge
-- IE 10+
+[https://cdnjs.com/libraries/bulma](https://cdnjs.com/libraries/bulma)
 
-## Changelog
-For changelogs, check out [the Releases section of materialize](https://github.com/Dogfalo/materialize/releases) or the [CHANGELOG.md](CHANGELOG.md).
+Feel free to raise an issue or submit a pull request.
 
-## Testing
-We use Jasmine as our testing framework and we're trying to write a robust test suite for our components. If you want to help, [here's a starting guide on how to write tests in Jasmine](CONTRIBUTING.md#jasmine-testing-guide).
+## CSS only
 
-## Contributing
-Check out the [CONTRIBUTING document](CONTRIBUTING.md) in the root of the repository to learn how you can contribute. You can also browse the [help-wanted](https://github.com/Dogfalo/materialize/labels/help-wanted) tag in our issue tracker to find things to do.
+Bulma is a **CSS** framework. As such, the sole output is a single CSS file: [bulma.css](https://github.com/jgthms/bulma/blob/master/css/bulma.css)
+
+You can either use that file, "out of the box", or download the Sass source files to customize the [variables](https://bulma.io/documentation/overview/variables/).
+
+There is **no** JavaScript included. People generally want to use their own JS implementation (and usually already have one). Bulma can be considered "environment agnostic": it's just the style layer on top of the logic.
+
+## Browser Support
+
+Bulma uses [autoprefixer](https://github.com/postcss/autoprefixer) to make (most) Flexbox features compatible with earlier browser versions. According to [Can I use](https://caniuse.com/#feat=flexbox), Bulma is compatible with **recent** versions of:
+
+* Chrome
+* Edge
+* Firefox
+* Opera
+* Safari
+
+Internet Explorer (10+) is only partially supported.
+
+## Documentation
+
+The documentation resides in the [docs](docs) directory, and is built with the Ruby-based [Jekyll](https://jekyllrb.com/) tool.
+
+Browse the [online documentation here.](https://bulma.io/documentation/overview/start/)
+
+## Related projects
+
+| Project                                                                            | Description                                                        |
+|------------------------------------------------------------------------------------|--------------------------------------------------------------------|
+| [Bulma with Attribute Modules](https://github.com/j5bot/bulma-attribute-selectors) | Adds support for attribute-based selectors.                        |
+| [Bulma with Rails](https://github.com/joshuajansen/bulma-rails)                    | Integrates Bulma with the rails asset pipeline                     |
+| [Vue Admin](https://github.com/vue-bulma/vue-admin)                                | Vue Admin framework powered by Bulma                               |
+| [Bulmaswatch](https://github.com/jenil/bulmaswatch)                                | Free themes for Bulma                                              |
+| [Goldfish](https://github.com/Caiyeon/goldfish)                                    | Vault UI with Bulma, Golang, and Vue Admin                         |
+| [ember-bulma](https://github.com/open-tux/ember-bulma)                             | Ember addon providing a collection of UI components for Bulma      |
+| [Bloomer](https://bloomer.js.org)                                                  | A set of React components for Bulma                                |
+| [Re-bulma](https://github.com/bokuweb/re-bulma)                                    | Bulma components build with React                                  |
+| [React-bulma](https://github.com/kulakowka/react-bulma)                            | React.js components for Bulma                                      |
+| [Buefy](https://buefy.github.io)                                                   | Lightweight UI components for Vue.js based on Bulma                |
+| [vue-bulma-components](https://github.com/vouill/vue-bulma-components)             | Bulma components for Vue.js with straightforward syntax            |
+| [BulmaJS](https://github.com/VizuaaLOG/BulmaJS)                                    | Javascript integration for Bulma. Written in ES6 with a data-* API |
+| [Bulma.styl](https://github.com/log1x/bulma.styl)                                  | 1:1 Stylus translation of Bulma                                    |
+| [elm-bulma-classes](https://github.com/danielnarey/elm-bulma-classes)              | Bulma prepared for usage with ELM                                  |
+| [Bulma Customizer](https://bulma-customizer.bstash.io/)                            | Bulma Customizer &#8211; Create your own **bespoke** Bulma build   |
+| [Fulma](https://mangelmaxime.github.io/Fulma/)                                     | Wrapper around Bulma for [fable-react](https://github.com/fable-compiler/fable-react)   |
+| [Laravel Enso](https://github.com/laravel-enso/enso)                               | SPA Admin Panel built with Bulma, VueJS and Laravel 			      |
+| [Django Bulma](https://github.com/timonweb/django-bulma)                           | Integrates Bulma with Django 			    |
+| [Bulma Templates](https://github.com/dansup/bulma-templates)                       | Free Templates for Bulma                       |
+| [React Bulma Components](https://github.com/couds/react-bulma-components)          | Another React wrap on React for Bulma.io                           |
+| [purescript-bulma](https://github.com/sectore/purescript-bulma)                    | PureScript bindings for Bulma                                      |
 
 ## Copyright and license
-Code copyright 2017 Materialize. Code released under the MIT license.
+
+Code copyright 2017 Jeremy Thomas. Code released under [the MIT license](https://github.com/jgthms/bulma/blob/master/LICENSE).
